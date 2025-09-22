@@ -1,0 +1,12 @@
+html {
+	font-family: 'Fragment Mono', monospace;
+}
+
+body {
+	background-color: rgb(0 0 0 / .95);
+	background-image: url(../images/bg.webp);
+	background-attachment: fixed;
+	background-position: center top;
+	background-blend-mode: multiply;
+	color: var(--color-secondary);
+}

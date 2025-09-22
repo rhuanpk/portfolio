@@ -1,0 +1,11 @@
+:root {
+	--color-primary: #14AE5C;
+	--color-secondary: white;
+
+	--font-size-title: 5.2rem;
+	--font-size-subtitle: 3.2rem;
+	--font-size-subsubtitle: 2.4rem;
+	--font-size-text: 2rem;
+
+	--padding-sections: 3.2rem;
+}

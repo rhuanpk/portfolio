@@ -1,0 +1,19 @@
+.header {
+	font-size: var(--font-size-text);
+
+	padding: var(--padding-sections);
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__logo {
+	color: var(--color-secondary);
+	text-transform: uppercase;
+	text-decoration: none;
+
+	flex-grow: 1;
+}
+
+.header__menu {
+	list-style-type: none;
+}
