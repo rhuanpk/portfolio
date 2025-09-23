@@ -1,19 +1,64 @@
 .header {
 	font-size: var(--font-size-text);
 
-	padding: var(--padding-sections);
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items: center;
+
+	position: relative;
 }
 
 .header__logo {
-	color: var(--color-secondary);
+	color: inherit;
 	text-transform: uppercase;
 	text-decoration: none;
+	padding: var(--padding-content);
+}
 
-	flex-grow: 1;
+.header__button {
+	cursor: pointer;
+	padding: .4em .8em .2em;
+}
+
+.header__button>svg {
+	fill: var(--color-secondary);
+}
+
+.header__button>input {
+	display: none;
+}
+
+.header__navigation {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+
+	transform: scaleY(0);
+	transform-origin: top;
+	opacity: 0;
+
+	transition-property: opacity transform;
+	transition-duration: 250ms;
+}
+
+.header__button:has(>input:checked)+.header__navigation {
+	background-color: black;
+	transform: scaleY(100%);
+	opacity: 1;
 }
 
 .header__menu {
 	list-style-type: none;
+}
+
+.header__item>a {
+	color: var(--color-primary);
+	text-decoration: none;
+	display: block;
+	padding: var(--padding-content);
+
+	&:hover {
+		background-color: color-mix(in srgb, white, transparent 90%);
+	}
 }
