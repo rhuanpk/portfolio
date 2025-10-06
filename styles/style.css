@@ -19,6 +19,6 @@ body {
 }
 
 .icon {
-	font-size: 4.8rem;
+	font-size: var(--font-size-icon);
 	fill: var(--color-primary);
 }

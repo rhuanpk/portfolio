@@ -1,12 +1,16 @@
 :root {
-	--color-primary: #14AE5C;
-	--color-secondary: white;
+	--color-primary: #14ae5c;
+	--color-primary-dark: color-mix(in srgb, var(--color-primary), black 97.5%);
+	--color-secondary: #ddd;
 
 	--font-size-title: 5.2rem;
 	--font-size-subtitle: 3.2rem;
 	--font-size-subsubtitle: 2.4rem;
 	--font-size-text: 2rem;
+	--font-size-icon: 4.8rem;
 
 	--padding-block: 2.8rem;
 	--padding-content: .8em;
+
+	--ease-out-fast: cubic-bezier(0, 0, .26, 1);
 }
