@@ -17,6 +17,8 @@
 }
 
 .header__button {
+	background-color: transparent;
+	border: none;
 	cursor: pointer;
 	padding: .4em .8em .2em;
 }
@@ -25,24 +27,31 @@
 	fill: var(--color-secondary);
 }
 
-.header__button>input {
+/* .header__button>input {
 	display: none;
-}
+} */
 
 .header__navigation {
 	position: absolute;
 	top: 100%;
 	width: 100%;
 
-	transform: scaleY(0);
+	background-color: transparent;
 	transform-origin: top;
+	transform: scaleY(0);
 	opacity: 0;
 
 	transition-property: opacity transform;
 	transition-duration: 250ms;
 }
 
-.header__button:has(>input:checked)+.header__navigation {
+/* .header__button:has(>input:checked)+.header__navigation {
+	background-color: black;
+	transform: scaleY(100%);
+	opacity: 1;
+} */
+
+.header__navigation--open {
 	background-color: black;
 	transform: scaleY(100%);
 	opacity: 1;
@@ -57,6 +66,8 @@
 	text-decoration: none;
 	display: block;
 	padding: var(--padding-content);
+
+	/* transition: background-color 100ms; */
 
 	&:hover {
 		background-color: color-mix(in srgb, white, transparent 90%);
