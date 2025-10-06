@@ -27,10 +27,6 @@
 	fill: var(--color-secondary);
 }
 
-/* .header__button>input {
-	display: none;
-} */
-
 .header__navigation {
 	position: absolute;
 	top: 100%;
@@ -44,12 +40,6 @@
 	transition-property: opacity transform;
 	transition-duration: 250ms;
 }
-
-/* .header__button:has(>input:checked)+.header__navigation {
-	background-color: black;
-	transform: scaleY(100%);
-	opacity: 1;
-} */
 
 .header__navigation--open {
 	background-color: black;
