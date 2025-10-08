@@ -4,14 +4,26 @@ html {
 }
 
 body {
-	background-color: rgb(0 0 0 / .95);
-	background-image: url(../images/bg.webp);
-	background-attachment: fixed;
-	background-position: center top;
-	background-blend-mode: multiply;
+	/* set mobile navigation ui color */
+	background-color: var(--color-primary-dark);
 	color: var(--color-secondary);
 
 	padding: var(--padding-block);
+}
+
+/* to work in mobile avoiding the image cut in bottom when scroll and url bar hidden */
+body::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(0 0 0 / .95);
+	background-image: url(../images/bg.webp);
+	/* background-position: center top; */
+	background-blend-mode: multiply;
+	z-index: -1;
 }
 
 ::selection {
