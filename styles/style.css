@@ -1,5 +1,6 @@
 html {
 	font-family: 'Fragment Mono', monospace;
+	scroll-behavior: smooth;
 }
 
 body {

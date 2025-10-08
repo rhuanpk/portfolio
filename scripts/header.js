@@ -8,6 +8,7 @@
 		event.stopPropagation()
 		headerNavigationToggle()
 	})
+
 	headerNavigation.addEventListener('click', event => {
 		event.stopPropagation()
 		headerNavigationToggle()

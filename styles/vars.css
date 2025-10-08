@@ -12,5 +12,6 @@
 	--padding-block: 2.8rem;
 	--padding-content: .8em;
 
+	--border-radius: .4rem;
 	--ease-out-fast: cubic-bezier(0, 0, .26, 1);
 }
