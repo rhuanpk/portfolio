@@ -1,0 +1,48 @@
+@keyframes underline {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.skills__group:not(:first-of-type) .skills__subtitle {
+	margin-top: 2em;
+}
+
+.skills__subtitle {
+	font-size: var(--font-size-subtitle-xxs);
+	font-weight: normal;
+
+	margin-bottom: 2em;
+
+	&::before {
+		content: '$ ';
+	}
+
+	&::after {
+		content: '_';
+		animation: underline 750ms infinite alternate;
+	}
+}
+
+.skills__list {
+	list-style-type: none;
+
+	display: flex;
+	gap: 4em;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.skills__item {
+	font-size: var(--font-size-text);
+	text-align: center;
+}
+
+.skills__item .icon {
+	display: block;
+	margin: 0 auto .2em;
+}

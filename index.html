@@ -15,6 +15,7 @@
 	<script src="scripts/script.js" defer></script>
 	<script src="scripts/body.js" defer></script>
 	<script src="scripts/header.js" defer></script>
+	<script src="scripts/footer.js" defer></script>
 
 	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/fonts.css">
@@ -25,6 +26,8 @@
 	<link rel="stylesheet" href="styles/pages/header.css">
 	<link rel="stylesheet" href="styles/pages/hero.css">
 	<link rel="stylesheet" href="styles/pages/about.css">
+	<link rel="stylesheet" href="styles/pages/skills.css">
+	<link rel="stylesheet" href="styles/pages/footer.css">
 </head>
 
 <body>
@@ -40,10 +43,12 @@
 
 		<nav class="header__navigation">
 			<ul class="header__menu">
-				<li class="header__item"><a href="#sobre">Sobre</a></li>
-				<li class="header__item"><a href="#habilidades">Habilidades</a></li>
-				<li class="header__item"><a href="#projetos">Projetos</a></li>
-				<li class="header__item"><a href="#contato">Contato</a></li>
+				<li class="header__item"><a class="header__link" href="#sobre">Sobre</a></li>
+				<li class="header__item"><a class="header__link" href="#habilidades">Habilidades</a></li>
+				<!-- <li class="header__item"><a class="header__link" href="#projetos">Projetos</a></li> -->
+				<!-- <li class="header__item"><a class="header__link" href="#contato">Contato</a></li> -->
+				<li class="header__item"><button class="header__link">Projetos</button></li>
+				<li class="header__item"><button class="header__link">Contato</button></li>
 			</ul>
 		</nav>
 	</header>
@@ -86,7 +91,7 @@
 
 	<main>
 		<!-- about -->
-		<section id="sobre" class="about section-padding">
+		<section id="sobre" class="about content-section">
 			<h3 class="about__title subtitle">Sobre</h3>
 
 			<p class="about__text">
@@ -101,7 +106,7 @@
 		</section>
 
 		<!-- skills -->
-		<section id="habilidades" class="skills section-padding">
+		<section id="habilidades" class="skills content-section">
 			<h3 class="skills__title subtitle">Habilidades</h3>
 
 			<div class="skills__group">
@@ -226,58 +231,28 @@
 		</section>
 
 		<!-- projects -->
-		<section id="projetos" class="projects section-padding">
+		<!-- <section id="projetos" class="projects content-section">
 			<h3 class="projects__title subtitle">Projetos</h3>
 
 			<p class="projects__text">Em construção...</p>
-		</section>
+		</section> -->
 
 		<!-- contact -->
-		<section id="contato" class="contact section-padding">
+		<!-- <section id="contato" class="contact content-section">
 			<h3 class="contact__title subtitle">Contato</h3>
 
 			<p class="contact__text">Em construção...</p>
-		</section>
+		</section> -->
 	</main>
 
 	<!-- footer -->
 	<footer class="footer">
-		<p class="footer__copy">Copyright &copy; 2025 by Rhuan Patriky</p>
+		<p class="footer__copy">Copyright &copy; <span id="year"></span> by Rhuan Patriky</p>
 
 		<address class="footer__addr">
-			Contato
 			<ul>
-				<li>
-					<a href="https://www.linkedin.com/in/rhuanpk/" target="_blank" rel="noopener noreferrer">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/social/symbol-defs.svg#linkedin"></use>
-						</svg>LinkedIn
-					</a>
-				</li>
-
-				<li>
-					<a href="mailto:dev@rhuanpk.net">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/social/symbol-defs.svg#email"></use>
-						</svg>Email
-					</a>
-				</li>
-
-				<li>
-					<a href="https://github.com/rhuanpk" target="_blank" rel="noopener noreferrer">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/social/symbol-defs.svg#github"></use>
-						</svg>GitHub
-					</a>
-				</li>
-
-				<li>
-					<a href="https://www.instagram.com/rhuanpk" target="_blank" rel="noopener noreferrer">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/social/symbol-defs.svg#instagram"></use>
-						</svg>Instagram
-					</a>
-				</li>
+				<li>dev@rhuanpk.net</li>
+				<li>+55 (44) 99951-4013</li>
 			</ul>
 		</address>
 	</footer>

@@ -1,0 +1,32 @@
+.footer {
+	background-color: var(--color-primary-dark);
+	font-size: var(--font-size-text-xs);
+
+	padding: var(--padding-block);
+}
+
+.footer a {
+	color: inherit;
+}
+
+.footer__copy {
+	text-align: center;
+	border-bottom: 1px solid rgb(255 255 255 / .25);
+
+	margin-bottom: 1.6em;
+	padding-bottom: 1.6em;
+}
+
+.footer__addr>ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+.footer__addr>ul>li {
+	display: inline;
+
+	&:not(:last-child)::after {
+		content: ' /';
+		color: rgb(255 255 255 / .35);
+	}
+}
