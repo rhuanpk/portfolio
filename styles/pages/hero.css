@@ -13,7 +13,7 @@
 }
 
 .hero__subtitle {
-	font-size: var(--font-size-text);
+	font-size: var(--font-size-subtitle-xxs);
 }
 
 .hero__content {
@@ -32,8 +32,7 @@
 	padding: var(--padding-content);
 
 	filter: unset;
-	transition: filter 500ms;
-	transition-timing-function: var(--ease-out-fast);
+	transition: filter 500ms var(--ease-out-fast);
 
 	&:hover {
 		filter: drop-shadow(0 0 2rem var(--color-primary));
@@ -41,6 +40,5 @@
 }
 
 .hero__username {
-	font-size: var(--font-size-text);
-	/* margin-top: var(--padding-content); */
+	font-size: var(--font-size-subtitle-xxs);
 }

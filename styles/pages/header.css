@@ -14,11 +14,6 @@
 }
 
 .header.header--full {
-	/* background-color: var(--color-primary-dark); */
-
-	/* background-color: var(--color-primary-dark); */
-	/* padding: var(--padding-block) 0; */
-
 	background-color: var(--color-primary-dark);
 	width: calc(100% + (var(--padding-block) * 2));
 	margin-left: calc(var(--padding-block) * -1);
@@ -46,8 +41,6 @@
 }
 
 .header__navigation {
-	/* --border-radius: .4rem; */
-
 	position: absolute;
 	top: 125%;
 	width: 100%;
@@ -66,8 +59,6 @@
 
 .header__navigation.header__navigation--open {
 	background-color: var(--color-primary-dark);
-	/* background-color: color-mix(in srgb, var(--color-primary-dark), black 25%); */
-
 	box-shadow: 0 0 4rem color-mix(in srgb, var(--color-primary), transparent 80%);
 
 	transform: scaleY(100%);
@@ -96,8 +87,6 @@
 
 	display: block;
 	padding: var(--padding-content);
-
-	/* transition: background-color 250ms; */
 
 	&:hover {
 		background-color: red;
