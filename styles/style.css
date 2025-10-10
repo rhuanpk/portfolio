@@ -1,5 +1,5 @@
 ::selection {
-	background-color: color-mix(in srgb, var(--color-primary), black 50%);
+	background-color: var(--color-primary-dark-half);
 	color: var(--color-secondary);
 }
 
@@ -9,34 +9,15 @@ html {
 }
 
 body {
-	/* set mobile navigation ui color */
-	background-color: var(--color-primary-dark);
-
+	background-color: var(--color-primary-dark-full);
 	color: var(--color-secondary);
-	padding: var(--padding-block);
-
-	/* to work in mobile avoiding the image cut in bottom when scroll and url bar hidden */
-	&::before {
-		content: '';
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-		background-color: rgb(0 0 0 / .95);
-		background-image: url(../images/bg.webp);
-		background-blend-mode: multiply;
-		z-index: -1;
-	}
-}
-
-main {
-	padding: var(--padding-block);
 }
 
 .icon {
 	font-size: var(--font-size-icon);
 	fill: var(--color-primary);
+
+	vertical-align: middle;
 }
 
 .break-line {
@@ -48,11 +29,10 @@ main {
 	font-size: var(--font-size-subtitle);
 	font-weight: normal;
 	text-align: center;
-	word-wrap: break-word;
 
-	margin-bottom: 2em;
+	margin-bottom: var(--space-subsection);
 }
 
 .content-section {
-	padding-top: 10rem;
+	padding-top: var(--space-section);
 }

@@ -1,5 +1,6 @@
 .header {
-	background-color: transparent;
+	background-color: var(--color-primary-dark-over);
+	padding: calc(var(--padding-block) / 2) var(--padding-block);
 
 	display: flex;
 	flex-wrap: wrap;
@@ -9,14 +10,6 @@
 	position: sticky;
 	top: 0;
 
-	transition: background-color 200ms;
-}
-
-.header.header--full {
-	background-color: var(--color-primary-dark);
-	width: calc(100% + (var(--padding-block) * 2));
-	margin-left: calc(var(--padding-block) * -1);
-	padding: 0 var(--padding-block);
 	z-index: 1;
 }
 
@@ -34,7 +27,7 @@
 	border: none;
 	cursor: pointer;
 
-	padding: .4em .8em .2em;
+	padding: calc(var(--padding-content) / 2) var(--padding-content);
 }
 
 .header__button>svg {
@@ -42,65 +35,50 @@
 }
 
 .header__navigation {
+	background-color: transparent;
 	text-align: center;
 
 	position: absolute;
-	top: 125%;
+	top: 100%;
+	left: 0;
 	width: 100%;
-
-	background-color: transparent;
-	box-shadow: none;
-	border-radius: var(--border-radius);
 
 	transform-origin: top;
 	transform: scaleY(0);
 	opacity: 0;
 
-	transition-property: opacity, transform, box-shadow;
-	transition-duration: 100ms, 250ms, 750ms;
+	transition-property: opacity, transform;
+	transition-duration: 100ms, 250ms;
 }
 
 .header__navigation.header__navigation--open {
-	background-color: var(--color-primary-dark);
-	box-shadow: 0 0 4rem color-mix(in srgb, var(--color-primary), transparent 80%);
+	background-color: var(--color-primary-dark-over);
 
 	transform: scaleY(100%);
 	opacity: 1;
-}
-
-.header__navigation.header__navigation--full {
-	width: calc(100% - (var(--padding-block)*2));
 }
 
 .header__menu {
 	list-style-type: none;
 }
 
-.header__item:first-child>.header__link {
-	border-radius: var(--border-radius) var(--border-radius) 0 0;
-}
-
-.header__item:last-child>.header__link {
-	border-radius: 0 0 var(--border-radius) var(--border-radius);
-}
-
 .header__item>button.header__link {
 	background-color: unset;
 	border: none;
-	opacity: .25;
+	opacity: var(--opacity-text);
 
 	width: 100%;
 }
 
 .header__link {
-	color: var(--color-primary);
-	font-size: var(--font-size-text-xl);
+	color: inherit;
+	font-size: var(--font-size-subtitle-xs);
 	text-decoration: none;
 
 	display: block;
 	padding: var(--padding-content);
 
 	&:hover {
-		background-color: color-mix(in srgb, var(--color-primary-dark), white 3.5%);
+		background-color: var(--color-primary);
 	}
 }

@@ -1,6 +1,10 @@
 :root {
 	--color-primary: #14ae5c;
-	--color-primary-dark: color-mix(in srgb, var(--color-primary), black 97.5%);
+	--color-primary-light-half: color-mix(in srgb, var(--color-primary), white);
+	--color-primary-dark-half: color-mix(in srgb, var(--color-primary), black);
+	--color-primary-dark-heavy: color-mix(in srgb, var(--color-primary), black 75%);
+	--color-primary-dark-full: color-mix(in srgb, var(--color-primary), black 90%);
+	--color-primary-dark-over: color-mix(in srgb, var(--color-primary), black 95%);
 	--color-secondary: #ddd;
 
 	--font-size-title: 5.2rem;
@@ -12,9 +16,21 @@
 	--font-size-text-xl: 1.8rem;
 	--font-size-icon: 4.8rem;
 
+	--width-xs: 0em;
+	--width-sm: 30em;
+	--width-lg: 48em;
+	--width-md: 90em;
+	--width-xl: 120em;
+
 	--padding-block: 2.8rem;
 	--padding-content: .8em;
 
+	--space-section: 12rem;
+	--space-subsection: calc(var(--space-section) / 3);
+	--space-subsubsection: calc(var(--space-section) / 4);
+
+	--opacity-text: .25;
 	--border-radius: .4rem;
 	--ease-out-fast: cubic-bezier(0, 0, .26, 1);
+	--gap-default: 4em;
 }
