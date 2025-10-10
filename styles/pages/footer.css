@@ -30,3 +30,17 @@
 		color: rgb(255 255 255 / .35);
 	}
 }
+
+.footer__link {
+	text-decoration: none;
+	padding: calc(var(--padding-content) / 2);
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.footer__link .icon {
+	font-size: var(--font-size-subtitle-xs);
+	fill: var(--color-secondary);
+}
