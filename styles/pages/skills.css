@@ -31,7 +31,7 @@
 	font-size: var(--font-size-text);
 	text-align: center;
 	border: .1rem solid var(--color-primary-dark-half);
-	border-radius: .4rem;
+	border-radius: var(--border-radius-default);
 
 	width: 12.8rem;
 	padding: 1em;
@@ -49,5 +49,20 @@
 
 	to {
 		opacity: 1;
+	}
+}
+
+@media (width >=48em) {
+	.skills__subtitle {
+		text-align: center;
+	}
+
+	.skills__item {
+		min-width: fit-content;
+	}
+
+	.skills__item .icon {
+		display: initial;
+		margin: auto;
 	}
 }

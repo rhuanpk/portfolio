@@ -80,6 +80,33 @@
 	padding: var(--padding-content);
 
 	&:hover {
-		background-color: var(--color-primary);
+		background-color: var(--color-primary-dark-half);
+	}
+}
+
+@media (width >=90em) {
+	.header__navigation {
+		text-align: initial;
+
+		position: initial;
+		inset: unset;
+		width: auto;
+
+		transform: inherit;
+		opacity: initial;
+	}
+
+	.header__button {
+		display: none;
+	}
+
+	.header__menu {
+		display: flex;
+		gap: var(--gap-default);
+	}
+
+	.header__link {
+		font-size: var(--font-size-subtitle-xxs);
+		border-radius: var(--border-radius-default);
 	}
 }

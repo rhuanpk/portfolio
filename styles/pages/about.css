@@ -1,6 +1,6 @@
 .about {
 	background-color: var(--color-primary-dark-heavy);
-	box-shadow: 0 0 2.4rem 1.2rem color-mix(in srgb, var(--color-primary), transparent 90%);
+	box-shadow: 0 0 2rem .8rem color-mix(in srgb, var(--color-primary), transparent 90%);
 
 	padding: var(--padding-block);
 }

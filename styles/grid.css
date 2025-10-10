@@ -21,8 +21,6 @@
 */
 
 .row {
-	/* --gap-default: 1rem; */
-
 	/* 1  item :  12 col -> 100% (gap) */
 	--cols-12: 100%;
 

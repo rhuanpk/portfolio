@@ -33,7 +33,7 @@
 <body>
 	<!-- header -->
 	<header class="header">
-		<a href="index.html" class="header__logo">rhuanpk.net</a>
+		<a href="#" class="header__logo">rhuanpk.net</a>
 
 		<button class="header__button">
 			<svg class="icon">
@@ -47,8 +47,8 @@
 				<li class="header__item"><a class="header__link" href="#habilidades">Habilidades</a></li>
 				<!-- <li class="header__item"><a class="header__link" href="#projetos">Projetos</a></li> -->
 				<!-- <li class="header__item"><a class="header__link" href="#contato">Contato</a></li> -->
-				<li class="header__item"><button class="header__link">Projetos</button></li>
-				<li class="header__item"><button class="header__link">Contato</button></li>
+				<li class="header__item"><button class="header__link" disabled>Projetos</button></li>
+				<li class="header__item"><button class="header__link" disabled>Contato</button></li>
 			</ul>
 		</nav>
 	</header>
@@ -66,27 +66,27 @@
 
 		<article class="hero__content row">
 			<a class="hero__icon col xs-6 sm-3" href="https://www.linkedin.com/in/rhuanpk/" target="_blank"
-				rel="noopener noreferrer">
+				rel="noopener noreferrer" title="LinkedIn">
 				<svg class="icon">
 					<use xlink:href="assets/icomoon/social/symbol-defs.svg#linkedin"></use>
 				</svg>
 			</a>
 
-			<a class="hero__icon col xs-6 sm-3" href="mailto:dev@rhuanpk.net">
+			<a class="hero__icon col xs-6 sm-3" href="mailto:dev@rhuanpk.net" title="Email">
 				<svg class="icon">
 					<use xlink:href="assets/icomoon/social/symbol-defs.svg#email"></use>
 				</svg>
 			</a>
 
 			<a class="hero__icon col xs-6 sm-3" href="https://github.com/rhuanpk" target="_blank"
-				rel="noopener noreferrer">
+				rel="noopener noreferrer" title="GitHub">
 				<svg class="icon">
 					<use xlink:href="assets/icomoon/social/symbol-defs.svg#github"></use>
 				</svg>
 			</a>
 
 			<a class="hero__icon col xs-6 sm-3" href="https://www.instagram.com/rhuanpk" target="_blank"
-				rel="noopener noreferrer">
+				rel="noopener noreferrer" title="Instagram">
 				<svg class="icon">
 					<use xlink:href="assets/icomoon/social/symbol-defs.svg#instagram"></use>
 				</svg>
@@ -96,7 +96,7 @@
 		</article>
 	</section>
 
-	<main>
+	<main id="content">
 		<!-- about -->
 		<div id="sobre" class="content-section">
 			<section class="about">
@@ -258,14 +258,14 @@
 	</main>
 
 	<!-- footer -->
-	<div class="content-section">
+	<div id="rodape" class="content-section">
 		<footer class="footer">
 			<p class="footer__copy">Copyright &copy; <span id="year"></span> by Rhuan Patriky</p>
 
 			<address class="footer__addr">
 				<ul>
 					<li>
-						<a class="footer__link" href="mailto:dev@rhuanpk.net">
+						<a class="footer__link" href="mailto:dev@rhuanpk.net" title="Email">
 							<svg class="icon">
 								<use xlink:href="assets/icomoon/social/symbol-defs.svg#email"></use>
 							</svg>
@@ -274,7 +274,7 @@
 					</li>
 					<li>
 						<a class="footer__link" href="https://wa.me/5544999514013" target="_blank"
-							rel="noopener noreferrer">
+							rel="noopener noreferrer" title="WhatsApp">
 							<svg class="icon">
 								<use xlink:href="assets/icomoon/social/symbol-defs.svg#whatsapp"></use>
 							</svg>
