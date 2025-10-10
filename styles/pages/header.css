@@ -1,6 +1,7 @@
 .header {
 	background-color: var(--color-primary-dark-over);
 	padding: calc(var(--padding-block) / 2) var(--padding-block);
+	margin-bottom: var(--space-subsubsection);
 
 	display: flex;
 	flex-wrap: wrap;

@@ -1,4 +1,5 @@
 :root {
+	/* #10e3e3 */
 	--color-primary: #14ae5c;
 	--color-primary-light-half: color-mix(in srgb, var(--color-primary), white);
 	--color-primary-dark-half: color-mix(in srgb, var(--color-primary), black);

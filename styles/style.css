@@ -13,6 +13,12 @@ body {
 	color: var(--color-secondary);
 }
 
+.column {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap-default);
+}
+
 .icon {
 	font-size: var(--font-size-icon);
 	fill: var(--color-primary);
@@ -27,7 +33,7 @@ body {
 .subtitle {
 	color: var(--color-primary);
 	font-size: var(--font-size-subtitle);
-	font-weight: normal;
+	/* font-weight: normal; */
 	text-align: center;
 
 	margin-bottom: var(--space-subsection);

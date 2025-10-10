@@ -1,3 +1,10 @@
+.about {
+	background-color: var(--color-primary-dark-heavy);
+	box-shadow: 0 0 2.4rem 1.2rem color-mix(in srgb, var(--color-primary), transparent 90%);
+
+	padding: var(--padding-block);
+}
+
 .about__text {
 	font-size: var(--font-size-text);
 	text-align: center;
@@ -5,5 +12,5 @@
 }
 
 .about__text:not(:last-child) {
-	margin-bottom: 1.6em;
+	margin-bottom: var(--space-subsubsection);
 }

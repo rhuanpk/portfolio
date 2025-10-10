@@ -1,21 +1,23 @@
 .hero {
 	padding: var(--padding-block);
 
-	display: flex;
-	gap: var(--gap-default);
-	flex-direction: column;
 	align-items: center;
 }
 
 .hero__header {
-	display: flex;
-	gap: var(--gap-default);
-	flex-direction: column;
 	align-items: center;
 }
 
+.hero__header>:has(.hero__img) {
+	background-image: linear-gradient(var(--color-primary), var(--color-primary-dark-full));
+	text-align: center;
+	border-radius: 50%;
+
+	padding: .6rem;
+}
+
 .hero__img {
-	background-image: linear-gradient(var(--color-primary-dark-full), var(--color-primary-dark-heavy), var(--color-primary-dark-half), var(--color-primary));
+	background-image: linear-gradient(var(--color-primary-dark-over), var(--color-primary-dark-full), var(--color-primary-dark-heavy), var(--color-primary-dark-half), var(--color-primary));
 	border-radius: 50%;
 
 	width: 30rem;

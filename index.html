@@ -54,9 +54,9 @@
 	</header>
 
 	<!-- hero -->
-	<section class="hero">
-		<header class="hero__header">
-			<img class="hero__img" src="images/profile.png" alt="Rhuan Patriky de Sousa Ferrer">
+	<section class="hero column">
+		<header class="hero__header column">
+			<div><img class="hero__img" src="images/profile.png" alt="Rhuan Patriky de Sousa Ferrer"></div>
 			<div>
 				<!-- <h1 class="hero__title">Rhuan <span class="break-line">Patriky</span></h1> -->
 				<h1 class="hero__title">Rhuan Patriky</h1>
@@ -98,144 +98,149 @@
 
 	<main>
 		<!-- about -->
-		<section id="sobre" class="about content-section">
-			<h3 class="about__title subtitle">Sobre</h3>
+		<div id="sobre" class="content-section">
+			<section class="about">
+				<h3 class="about__title subtitle">Sobre</h3>
 
-			<p class="about__text">
-				Esforço e dedicação são características intrínsecas, tenho extremo desejo em saber e entender processos
-				que proponho-me a fazer, não somente realiza-los sem entendimento.
-			</p>
-			<p class="about__text">
-				Programador em constante crescimento, tendo grande tendência a administração de sistemas operacionais
-				Linux onde tenho grande apreço pelos scripts em Shell Bash para automação das tarefas diárias, o que
-				proporcionam grande otimização de tempo e, principalmente por ajudar os que usufruem dos mesmos!
-			</p>
-		</section>
+				<p class="about__text">
+					Esforço e dedicação são características intrínsecas, tenho extremo desejo em saber e entender
+					processos que proponho-me a fazer, não somente realiza-los sem entendimento.
+				</p>
+				<p class="about__text">
+					Programador em constante crescimento, tendo grande tendência a administração de sistemas
+					operacionais Linux onde tenho grande apreço pelos scripts em Shell Bash para automação das tarefas
+					diárias, o que proporcionam grande otimização de tempo e, principalmente por ajudar os que usufruem
+					dos mesmos!
+				</p>
+			</section>
+		</div>
 
 		<!-- skills -->
-		<section id="habilidades" class="skills content-section">
-			<h3 class="skills__title subtitle">Habilidades</h3>
+		<div id="habilidades" class="content-section">
+			<section class="skills">
+				<h3 class="skills__title subtitle">Habilidades</h3>
 
-			<div class="skills__group">
-				<h4 class="skills__subtitle">Linguagens</h4>
-				<ul class="skills__list">
-					<li class="skills__item">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/dev/symbol-defs.svg#golang"></use>
-						</svg>
-						Golang
-					</li>
-					<li class="skills__item">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/dev/symbol-defs.svg#bash"></use>
-						</svg>
-						Bash
-					</li>
-					<li class="skills__item">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/dev/symbol-defs.svg#html"></use>
-						</svg>
-						HTML
-					</li>
-					<li class="skills__item">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/dev/symbol-defs.svg#css"></use>
-						</svg>
-						CSS
-					</li>
-				</ul>
-			</div>
+				<div class="skills__group">
+					<h4 class="skills__subtitle">Linguagens</h4>
+					<ul class="skills__list row">
+						<li class="skills__item">
+							<svg class="icon">
+								<use xlink:href="assets/icomoon/dev/symbol-defs.svg#golang"></use>
+							</svg>
+							Golang
+						</li>
+						<li class="skills__item">
+							<svg class="icon">
+								<use xlink:href="assets/icomoon/dev/symbol-defs.svg#bash"></use>
+							</svg>
+							Bash
+						</li>
+						<li class="skills__item">
+							<svg class="icon">
+								<use xlink:href="assets/icomoon/dev/symbol-defs.svg#html"></use>
+							</svg>
+							HTML
+						</li>
+						<li class="skills__item">
+							<svg class="icon">
+								<use xlink:href="assets/icomoon/dev/symbol-defs.svg#css"></use>
+							</svg>
+							CSS
+						</li>
+					</ul>
+				</div>
 
-			<div class="skills__group">
-				<h4 class="skills__subtitle" lang="en">Databases</h4>
-				<ul class="skills__list">
-					<li class="skills__item">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/dev/symbol-defs.svg#mysql"></use>
-						</svg>
-						MySQL
-					</li>
-					<li class="skills__item">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/dev/symbol-defs.svg#postgresql"></use>
-						</svg>
-						PostgreSQL
-					</li>
-				</ul>
-			</div>
+				<div class="skills__group">
+					<h4 class="skills__subtitle" lang="en">Databases</h4>
+					<ul class="skills__list row">
+						<li class="skills__item">
+							<svg class="icon">
+								<use xlink:href="assets/icomoon/dev/symbol-defs.svg#mysql"></use>
+							</svg>
+							MySQL
+						</li>
+						<li class="skills__item">
+							<svg class="icon">
+								<use xlink:href="assets/icomoon/dev/symbol-defs.svg#postgresql"></use>
+							</svg>
+							PostgreSQL
+						</li>
+					</ul>
+				</div>
 
-			<div class="skills__group">
-				<h4 class="skills__subtitle">DevOps</h4>
-				<ul class="skills__list">
-					<li class="skills__item">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/dev/symbol-defs.svg#docker"></use>
-						</svg>
-						Docker
-					</li>
-					<li class="skills__item">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/dev/symbol-defs.svg#kubernetes"></use>
-						</svg>
-						Kubernetes
-					</li>
-					<li class="skills__item">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/dev/symbol-defs.svg#nginx"></use>
-						</svg>
-						Nginx
-					</li>
-				</ul>
-			</div>
+				<div class="skills__group">
+					<h4 class="skills__subtitle">DevOps</h4>
+					<ul class="skills__list row">
+						<li class="skills__item">
+							<svg class="icon">
+								<use xlink:href="assets/icomoon/dev/symbol-defs.svg#docker"></use>
+							</svg>
+							Docker
+						</li>
+						<li class="skills__item">
+							<svg class="icon">
+								<use xlink:href="assets/icomoon/dev/symbol-defs.svg#kubernetes"></use>
+							</svg>
+							Kubernetes
+						</li>
+						<li class="skills__item">
+							<svg class="icon">
+								<use xlink:href="assets/icomoon/dev/symbol-defs.svg#nginx"></use>
+							</svg>
+							Nginx
+						</li>
+					</ul>
+				</div>
 
-			<div class="skills__group">
-				<h4 class="skills__subtitle">Ferramentas</h4>
-				<ul class="skills__list">
-					<li class="skills__item">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/dev/symbol-defs.svg#git"></use>
-						</svg>
-						Git
-					</li>
-					<li class="skills__item">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/dev/symbol-defs.svg#vim"></use>
-						</svg>
-						Vim
-					</li>
-					<li class="skills__item">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/dev/symbol-defs.svg#vscode"></use>
-						</svg>
-						VSCode
-					</li>
-					<li class="skills__item">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/dev/symbol-defs.svg#postman"></use>
-						</svg>
-						Postman
-					</li>
-				</ul>
-			</div>
+				<div class="skills__group">
+					<h4 class="skills__subtitle">Ferramentas</h4>
+					<ul class="skills__list row">
+						<li class="skills__item">
+							<svg class="icon">
+								<use xlink:href="assets/icomoon/dev/symbol-defs.svg#git"></use>
+							</svg>
+							Git
+						</li>
+						<li class="skills__item">
+							<svg class="icon">
+								<use xlink:href="assets/icomoon/dev/symbol-defs.svg#vim"></use>
+							</svg>
+							Vim
+						</li>
+						<li class="skills__item">
+							<svg class="icon">
+								<use xlink:href="assets/icomoon/dev/symbol-defs.svg#vscode"></use>
+							</svg>
+							VSCode
+						</li>
+						<li class="skills__item">
+							<svg class="icon">
+								<use xlink:href="assets/icomoon/dev/symbol-defs.svg#postman"></use>
+							</svg>
+							Postman
+						</li>
+					</ul>
+				</div>
 
-			<div class="skills__group">
-				<h4 class="skills__subtitle">OS</h4>
-				<ul class="skills__list">
-					<li class="skills__item">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/dev/symbol-defs.svg#linux"></use>
-						</svg>
-						Linux
-					</li>
-					<li class="skills__item">
-						<svg class="icon">
-							<use xlink:href="assets/icomoon/dev/symbol-defs.svg#windows"></use>
-						</svg>
-						Windows
-					</li>
-				</ul>
-			</div>
-		</section>
+				<div class="skills__group">
+					<h4 class="skills__subtitle">OS</h4>
+					<ul class="skills__list row">
+						<li class="skills__item">
+							<svg class="icon">
+								<use xlink:href="assets/icomoon/dev/symbol-defs.svg#linux"></use>
+							</svg>
+							Linux
+						</li>
+						<li class="skills__item">
+							<svg class="icon">
+								<use xlink:href="assets/icomoon/dev/symbol-defs.svg#windows"></use>
+							</svg>
+							Windows
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
 
 		<!-- projects -->
 		<!-- <section id="projetos" class="projects content-section">
@@ -253,16 +258,18 @@
 	</main>
 
 	<!-- footer -->
-	<footer class="footer">
-		<p class="footer__copy">Copyright &copy; <span id="year"></span> by Rhuan Patriky</p>
+	<div class="content-section">
+		<footer class="footer">
+			<p class="footer__copy">Copyright &copy; <span id="year"></span> by Rhuan Patriky</p>
 
-		<address class="footer__addr">
-			<ul>
-				<li>dev@rhuanpk.net</li>
-				<li>+55 (44) 99951-4013</li>
-			</ul>
-		</address>
-	</footer>
+			<address class="footer__addr">
+				<ul>
+					<li>dev@rhuanpk.net</li>
+					<li>+55 (44) 99951-4013</li>
+				</ul>
+			</address>
+		</footer>
+	</div>
 </body>
 
 </html>

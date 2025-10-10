@@ -29,6 +29,9 @@
 	/* 2  items:   6 col -> 50% (gap) */
 	--cols-6: calc(50% - var(--gap-default));
 
+	/* 3  items:   4 col -> 33.33% (gap) */
+	--cols-4: calc(33.33% - var(--gap-default));
+
 	/* 4  items:   3 col -> 25% (gap) */
 	--cols-3: calc(25% - var(--gap-default));
 }
@@ -52,12 +55,24 @@
 	.xs-6 {
 		width: var(--cols-6);
 	}
+
+	.xs-4 {
+		width: var(--cols-4);
+	}
 }
 
 /* sm */
 @media (width >=30em) {
 	.sm-12 {
 		width: var(--cols-12);
+	}
+
+	.sm-6 {
+		width: var(--cols-6);
+	}
+
+	.sm-4 {
+		width: var(--cols-4);
 	}
 
 	.sm-3 {
