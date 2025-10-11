@@ -3,7 +3,7 @@
 	align-items: center;
 }
 
-.hero :has(>.hero__img) {
+.hero__wrapper-img {
 	background-image: linear-gradient(var(--color-primary), var(--color-primary-dark-full));
 	text-align: center;
 	border-radius: 50%;
@@ -31,6 +31,10 @@
 	font-weight: normal;
 
 	margin-top: var(--space-subsubsection);
+}
+
+.hero__content {
+	margin: var(--space-subsection) auto 0;
 }
 
 .hero__icon {
