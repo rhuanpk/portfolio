@@ -26,10 +26,6 @@ body {
 	vertical-align: middle;
 }
 
-.break-line {
-	display: block;
-}
-
 .subtitle {
 	color: var(--color-primary);
 	font-size: var(--font-size-subtitle);

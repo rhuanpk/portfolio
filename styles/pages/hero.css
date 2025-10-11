@@ -1,9 +1,5 @@
 .hero {
 	padding: var(--padding-block);
-}
-
-.hero,
-.hero__header {
 	align-items: center;
 }
 
@@ -22,7 +18,7 @@
 	width: 30rem;
 }
 
-.hero__header>:has(>.hero__title) {
+.hero__header {
 	text-align: center;
 }
 
