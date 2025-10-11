@@ -22,7 +22,7 @@
 	width: 30rem;
 }
 
-.hero__header>:has(.hero__title) {
+.hero__header>:has(>.hero__title) {
 	text-align: center;
 }
 
