@@ -91,20 +91,14 @@
 	}
 
 	.hero__wrapper-main {
-		height: 80%;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
+		justify-content: space-evenly;
 	}
 
 	.hero__header {
 		text-align: unset;
-
-		flex-grow: 1;
-		flex-basis: auto;
-
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
 	}
 
 	.hero__content {
