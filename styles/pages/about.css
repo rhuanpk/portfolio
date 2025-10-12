@@ -9,8 +9,28 @@
 	font-size: var(--font-size-text);
 	text-align: center;
 	line-height: 1.5;
+
+	padding: calc(var(--padding-content) * 2);
 }
 
-.about__text:not(:last-child) {
-	margin-bottom: var(--space-subsubsection);
+@media (width >=90em) {
+	.about {
+		overflow: auto;
+	}
+
+	.about__text:nth-child(even) {
+		text-align: left;
+
+		width: 55%;
+		float: left;
+		clear: right;
+	}
+
+	.about__text:nth-child(odd) {
+		text-align: right;
+
+		width: 55%;
+		float: right;
+		clear: left;
+	}
 }
