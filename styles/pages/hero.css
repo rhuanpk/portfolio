@@ -80,14 +80,10 @@
 
 @media (width >=90em) {
 	.hero {
-		height: 70dvh;
+		height: 65dvh;
 
 		flex-direction: row-reverse;
 		justify-content: space-around;
-	}
-
-	.hero__img {
-		width: 60rem;
 	}
 
 	.hero__wrapper-main {
@@ -95,6 +91,10 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
+	}
+
+	.hero__img {
+		width: 50rem;
 	}
 
 	.hero__header {
