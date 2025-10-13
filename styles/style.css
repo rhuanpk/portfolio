@@ -26,6 +26,10 @@ body {
 	vertical-align: middle;
 }
 
+.uppercase {
+	text-transform: uppercase;
+}
+
 .subtitle {
 	color: var(--color-primary);
 	font-size: var(--font-size-subtitle);

@@ -15,13 +15,15 @@
 
 @media (width >=90em) {
 	.about {
+		--width-float: 65%;
+
 		overflow: auto;
 	}
 
 	.about__text:nth-child(even) {
 		text-align: left;
 
-		width: 55%;
+		width: var(--width-float);
 		float: left;
 		clear: right;
 	}
@@ -29,7 +31,7 @@
 	.about__text:nth-child(odd) {
 		text-align: right;
 
-		width: 55%;
+		width: var(--width-float);
 		float: right;
 		clear: left;
 	}
